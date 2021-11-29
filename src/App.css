@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'ClearSans';
+  src: local('ClearSans'), url("./fonts/ClearSans-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'ClearSans-Regular';
+  src: local('ClearSans'), url("./fonts/ClearSans-Regular.ttf") format('truetype');
+}
+
+.app {
+  background-color: #faf8ef;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  height: 100vh;
+  font-family: ClearSans;
+}
+
+.app-content {
+  background-color: #bbada0;
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  width: 65vh;
+  border-radius: 5px;
+}
+
+.app-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  width: 65vh;
+  align-items: flex-start;
+}
+
+.app-header-left {
+  flex: 1;
+  justify-content: left;
+}
+
+.app-header-left > h1 {
+  font-size: 80px;
+  color: #776e65;
+}
+
+.app-header-left > p {
+  font-size: 17px;
+  color: #776e65;
+  font-family: ClearSans-Regular;
+}
+
+.app-header-left > h3 {
+  color: #776e65;
+}
+
+.app-header-right {
+  justify-content: right;
+  align-items: right;
+}
+
+.app-stats {
+  display: flex;
+}
+
+.app-stats-score, .app-stats-bestScore {
+  background-color: #bbada0;
+  margin: 4px;
+  border-radius: 5px;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.app-stats-bestScore, .app-stats-score {
+  flex: 1;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.app-stats-score > h2, .app-stats-bestScore > h2  {
+  font-size: 12px;
+  color: #eee4da;
+}
+
+.app-stats-score > p, .app-stats-bestScore > p {
+  font-size: 30px;
+  color: white;
+}
+.app-new {
+  background-color: #8f7a66;
+  box-shadow: none;
+  color: #faf8ef;
+  border-radius: 4px;
+  border: none;
+  font-weight: 600;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  margin-top: 50px;
+  display: flex;
+  margin-left: 80px;
+}
+.app-new:hover {
+  background-color: #6b5c4e;
+  transition: 0.3s ease-out;
+}
+
+.app-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  place-items: center;
+}
